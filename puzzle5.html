@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 5 | Tense Puzzle Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🧩 Tense Puzzle Challenge</h1>
+
+    <h2>Welcome, <span id="displayName"></span></h2>
+
+    <div class="progress">
+        Puzzle 5 of 12
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="question">
+
+        <strong>Choose the correct sentence in the Simple Past Tense.</strong>
+
+    </div>
+
+    <div class="options">
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'They visited Jaipur last week.','puzzle6.html')">
+            They visited Jaipur last week.
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'They visited Jaipur last week.','puzzle6.html')">
+            They visit Jaipur last week.
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'They visited Jaipur last week.','puzzle6.html')">
+            They have visited Jaipur last week.
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'They visited Jaipur last week.','puzzle6.html')">
+            They are visiting Jaipur last week.
+        </button>
+
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <button class="next-btn" id="nextButton">
+        Next Puzzle ➜
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+loadPlayerName();
+updateProgress(5);
+</script>
+
+</body>
+
+</html>
