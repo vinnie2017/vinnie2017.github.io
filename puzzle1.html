@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Puzzle 1 | Tense Puzzle Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="updateProgress(1)">
+
+<div class="container">
+
+    <h1>🧩 Tense Puzzle Challenge</h1>
+
+    <h2>Welcome, <span id="displayName"></span></h2>
+
+    <div class="progress">
+        Puzzle 1 of 12
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="question">
+
+        <strong>Choose the correct sentence in the Simple Present Tense.</strong>
+
+    </div>
+
+    <div class="options">
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'She goes to school every day.','puzzle2.html')">
+
+        She goes to school every day.
+
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'She goes to school every day.','puzzle2.html')">
+
+        She go to school every day.
+
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'She goes to school every day.','puzzle2.html')">
+
+        She going to school every day.
+
+        </button>
+
+        <button class="option-btn"
+        onclick="checkAnswer(this,'She goes to school every day.','puzzle2.html')">
+
+        She is go to school every day.
+
+        </button>
+
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <button class="next-btn" id="nextButton">
+
+        Next Puzzle ➜
+
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
